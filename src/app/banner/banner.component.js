@@ -9,17 +9,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var BannerComponent = (function () {
+    function BannerComponent() {
+        this.banners = [
+            {
+                'id': '1',
+                'image': '../../images/h1.jpg',
+                'titre': "C'est le titre 1"
+            },
+            {
+                'id': '2',
+                'image': '../../images/h2.jpg',
+                'titre': "C'est le titre 2"
+            },
+            {
+                'id': '3',
+                'image': '../../images/h3.jpg',
+                'titre': "C'est le titre 3"
+            }
+        ];
     }
-    AppComponent = __decorate([
+    BannerComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/html_template/index.html',
+            selector: 'app-banner',
+            templateUrl: 'app/banner/banner.component.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BannerComponent);
+    return BannerComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.BannerComponent = BannerComponent;
+//# sourceMappingURL=banner.component.js.map

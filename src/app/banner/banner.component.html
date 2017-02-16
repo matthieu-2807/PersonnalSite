@@ -1,0 +1,20 @@
+<div class="banner">
+	<div class="container">
+		<div class="banner-bottom">
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider4">
+					<li *ngFor='let banner of banners'>
+						<div class="col-md-4 banner-left">
+							<h3>{{banner.titre}}</h3>
+						</div>
+						<div class="col-md-8 banner-right">
+							<img  class="img-responsive" src={{banner.image}} alt="">
+						</div>
+						<div class="clearfix"> </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<span class="mover"> </span>
+	</div>
+</div>

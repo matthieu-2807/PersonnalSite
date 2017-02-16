@@ -224,7 +224,7 @@ span.bann-sli-text {
   left: 0;
   top: 0;
 }
-.rslides li{
+.rslides li:first-child {
   position: relative;
   display: block;
   float: left;
@@ -233,6 +233,8 @@ span.bann-sli-text {
   height: auto;
   border: 0;
   width:100%;
+  display: block;
+  float: left;
 }
 .callbacks_tabs{
 	list-style: none;
