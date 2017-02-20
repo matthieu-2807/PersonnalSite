@@ -52,17 +52,17 @@
       var myVar = setInterval(function(){ 
         if( $(".rslides").length>0){
           clearInterval(myVar);
-          $(".rslides").responsiveSlides({
+          $("#slider4").responsiveSlides({
             timeout: 4000,
             auto: true,
             speed: 500,
-            maxwidth: "858px"
+            namespace: "callbacks"
           });
         }
         else{
-          console.log("coucou");
+          // nothing
         }
-       }, 2000);
+       }, 200);
     });
     </script>
 

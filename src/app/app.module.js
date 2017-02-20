@@ -14,17 +14,23 @@ var app_component_1 = require('./app.component');
 var header_component_1 = require('./header/header.component');
 var banner_component_1 = require('./banner/banner.component');
 var article_component_1 = require('./article/article.component');
+var container_component_1 = require('./container/container.component');
+// import { ListeArticleComponent }  from './article/listeArticle.component';
+var article_service_1 = require('./services/article.service');
+var app_router_1 = require('./router/app.router');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule, app_router_1.AppRouter],
             declarations: [app_component_1.AppComponent,
                 header_component_1.HeaderComponent,
                 banner_component_1.BannerComponent,
-                article_component_1.ArticleComponent],
-            bootstrap: [app_component_1.AppComponent]
+                article_component_1.ArticleComponent,
+                container_component_1.ContainerComponent],
+            bootstrap: [app_component_1.AppComponent],
+            providers: [article_service_1.ArticleService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
